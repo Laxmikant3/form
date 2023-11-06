@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: black;">
+    
+    <div class="container">
+        <h2>User Information Form</h2>
+        <form action="Form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female" required> Female
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <select class="form-control" id="city" name="city" required>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Amravati">Amravati</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Jalgao">Jalgao</option>
+                </select>
+            </div>
+            <center><button type="submit" class="btn btn-primary">Save</button></center>
+        </form>
+    </div>
+</body>
+</html>
